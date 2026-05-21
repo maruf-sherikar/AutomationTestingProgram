@@ -19,5 +19,8 @@ public class RC {
 
         //Hound a = new Dog(); // Java 22 This is not possible
         // Latest java 22 - It is never possible in JAVA
+
+
+
     }
 }
