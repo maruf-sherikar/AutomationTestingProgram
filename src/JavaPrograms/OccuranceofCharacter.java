@@ -32,28 +32,50 @@ public class OccuranceofCharacter {
 //
 //}
 
-public static void main(String[] args) {
+//public static void main(String[] args) {
+//
+//
+//    String x = "MarufSherikar";
+//
+//    x = x.toUpperCase();
+//
+//    HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+//
+//    for (int i = 0; i < x.length(); i++) {
+//        if (!hm.containsKey(x.charAt(i))) {
+//            hm.put(x.charAt(i), 1);
+//        } else {
+//
+//            int count = hm.get(x.charAt(i));
+//            hm.put(x.charAt(i), count + 1);
+//        }
+//    }
+//
+//    for (Map.Entry<Character, Integer> hm1 : hm.entrySet()) {
+//        System.out.println(hm1.getKey() + " " + hm1.getValue());
+//    }
 
 
-    String x = "MarufSherikar";
+    public static void main(String[] args) {
 
-    x = x.toUpperCase();
+        String x = "India is my country";
 
-    HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+        x = x.toLowerCase();
+        HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 
-    for (int i = 0; i < x.length(); i++) {
-        if (!hm.containsKey(x.charAt(i))) {
-            hm.put(x.charAt(i), 1);
-        } else {
+        for (int i = 0; i<x.length(); i++){
+            if (!hm.containsKey(x.charAt(i))){
+                hm.put(x.charAt(i), 1);
+            }else {
+                int count = hm.get(x.charAt(i));
+                hm.put(x.charAt(i), count + 1);
+            }
 
-            int count = hm.get(x.charAt(i));
-            hm.put(x.charAt(i), count + 1);
+    }
+
+        for (Map.Entry<Character, Integer> hm1 : hm.entrySet()){
+            System.out.println(hm1.getKey() + " " + hm1.getValue());
         }
-    }
-
-    for (Map.Entry<Character, Integer> hm1 : hm.entrySet()) {
-        System.out.println(hm1.getKey() + " " + hm1.getValue());
-    }
 
 }
 
