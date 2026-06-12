@@ -58,9 +58,8 @@ public class OccuranceofCharacter {
 
     public static void main(String[] args) {
 
-        String x = "India is my country";
+        String x = "India is my country".replace(" ", "");
 
-        x = x.toLowerCase();
         HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 
         for (int i = 0; i<x.length(); i++){
@@ -70,8 +69,7 @@ public class OccuranceofCharacter {
                 int count = hm.get(x.charAt(i));
                 hm.put(x.charAt(i), count + 1);
             }
-
-    }
+        }
 
         for (Map.Entry<Character, Integer> hm1 : hm.entrySet()){
             System.out.println(hm1.getKey() + " " + hm1.getValue());

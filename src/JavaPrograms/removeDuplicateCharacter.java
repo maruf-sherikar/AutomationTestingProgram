@@ -8,16 +8,16 @@ public class removeDuplicateCharacter {
 
         String x  = "Programming";
 
-        String re = "";
+        String result = "";
 
         for (int i = 0; i<x.length(); i++){
 
-            if (re.indexOf(x.charAt(i))==-1){
-                re = re + x.charAt(i);
+            if (result.indexOf(x.charAt(i))==-1){
+                result = result + x.charAt(i);
 
             }
         }
-        System.out.println(re);
+        System.out.println(result);
 
 
     }
